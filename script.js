@@ -390,7 +390,7 @@ function openModal(id) {
         <h3>Features</h3>
         <ul>${property.features.map(f => `<li>✅ ${f}</li>`).join('')}</ul>
         <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.75rem;">
-          <button id="modalVirtualTourBtn" class="btn" style="background:#0056b3;color:white;">🎥 Book Virtual Tour</button>
+          <button id="modalVirtualTourBtn" class="btn" style="background:#0056b3;color:white;">🎥 Request Listing Details</button>
           <button id="modalContactBtn" class="btn btn-primary">📞 Contact Susan</button>
           <button id="modalSaveBtn" class="btn" style="color:#e63900;">❤️ Save</button>
         </div>
