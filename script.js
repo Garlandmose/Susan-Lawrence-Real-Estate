@@ -377,7 +377,7 @@ function openModal(id) {
         <div class="price">${property.price}</div>
         <p>${property.description}</p>
         <p class="listing-source">Affiliate listing · <a href="${property.sourceUrl}" target="_blank" rel="noopener">View original listing: ${property.sourceLabel}</a></p>
-        <p class="affiliate-disclosure">The Keydeniers Team may receive a referral fee or commission under an affiliate agreement if a referral leads to a completed transaction. Verify all property information with the original source.</p>
+        <p class="affiliate-disclosure">Susan Lawrence Real Estate may receive a referral fee or commission under an affiliate agreement if a referral leads to a completed transaction. Verify all property information with the original source.</p>
         <div class="features-grid">
           <div class="feature-item"><span class="feature-icon">🛏️</span><span><strong>${property.beds} Bedrooms</strong></span></div>
           <div class="feature-item"><span class="feature-icon">🛁</span><span><strong>${property.baths} Bathrooms</strong></span></div>
