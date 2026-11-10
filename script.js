@@ -1,140 +1,50 @@
-// ✅ REBECCA'S CONTACT INFO
+// Susan Lawrence contact information
 const CONTACT = {
-  phone: "(407) 404-3546",
-  address: "240 Sandy Springs Pl, Atlanta, GA 30328, USA",
-  email: "joepossum@gmail.com",
-  facebook: "https://facebook.com/KeydeniersRebeccaRealtor"
+  phone: "+1 (262) 286-9903",
+  address: "3145 Carlisle St #101, Columbia, SC 29205, USA",
+  email: "susan.lawrence_remax@outlook.com",
+  facebook: "https://web.facebook.com/profile.php?id=61585842321740"
 };
 
 // ✅ FEATURED LISTINGS — Now with full Zillow image arrays (e.g., 32 for CO listing)
 const listingsData = [
   {
-    id: 1,
-    type: 'sale',
-    badge: 'FOR SALE',
-    price: '$314,900',
-    address: '1510 Little Bear Creek Pt UNIT 202, Colorado Springs, CO 80904',
-    beds: 3,
-    baths: 2,
-    sqft: 1328,
-    lotSize: 'N/A',
-    yearBuilt: 2011,
-    images: [
-      'https://photos.zillowstatic.com/fp/42f49df29c3f6fd8301225558617766e-cc_ft_1536.webp',
-      'https://photos.zillowstatic.com/fp/9bddc00355fdc55b4d53b34594de9fde-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/885d2bf35a0e428d1afcfcbe740e7e3c-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/907a6c81719d5a7fabcffabb531f5801-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/97c67fa2c28f9a53313715c88a47cf62-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/7de0408a173394218f401e3b0737c422-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/aa58c3d202d4aedfba6f4ba834244872-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/352da9a81a4f493731023a3a2d36be2c-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/15145fa1ec6e05db4b914ca26ba0bc0c-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/a921de34ccbf2bebeff8a6cbf7b5b91a-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/787ae214e241c921a497229d394e0ff9-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/985336ef23ecb44d41c9808b7da71ed5-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/d67ec871749dc577c83fea4f4e4a7c2a-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/e5ceeaf6c70af3b21f56da80e17b4843-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/6126986caac173be32916467d0185a4b-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/a76fbcca9e104cb685abaf91e3866a85-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/bd1783e10d5323a5cf306db39029f26e-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/f90436d1dfd299f136d274ec9fba447c-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/2a9cd0644803813e5bad97feee33fac1-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/70b32338d0a29726ce7dd47bc7241de5-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/c1aeca11feca51df4d32a8de1712e0ea-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/ad9505d628a40224a1ebf88216af9a05-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/90beb038911d3839adb07cee9240aaf2-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/beb8c1594b32040bd8a5f67b0aab1772-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/8489b43016d68306d3fce521de559318-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/461c14ee9b4d0420b9ac02b1cbeaa87d-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/d8a150c3c5cf5d8a5f4d5affc458bfb7-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/8ce0bd75dba148a30edc00b0754bca61-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/5dcdc8f1941880d7cc1d8b09366f500d-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/5cf3b6c31c22eee4fcfd3073e64a2054-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/bcbeebb4f0e2e13504a9fdeee5b2d7d0-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/f750af0fac47a856f3bfad8e12b04775-uncropped_scaled_within_1536_1152.webp',
-    ],
-    features: [
-      'Hardwood Floors',
-      'Stainless Appliances',
-      'Balcony w/ City View',
-      '1 Parking Spot',
-      'Parking features: 1 Car Garage Detached, Garage Door Opener',
-      'Pet Friendly'
-    ],
-    description: 'Beautiful Condo with Stunning Mountain Views Welcome to this spacious 3-bedroom, 2-bath ranch-style condo offering 1,328 sq. ft. of comfortable living. The open kitchen, dining, and living areas are filled with natural light and feature granite countertops, stainless steel appliances, breakfast bar, recessed lighting, and rich dark wood cabinetry. Cozy up by the corner gas log fireplace or step out onto the private balcony to relax and enjoy the peaceful views. The primary suite boasts a granite double vanity, walk-in shower with built-in seat, and an oversized walk-in closet. Two additional bedrooms share a beautifully updated bath with a tiled tub/shower surround. A full laundry room with shelving and included washer/dryer adds convenience. Every window frames a picturesque mountain view! This home comes with a detached 1-car garage plus plenty of extra parking. Villas at Bear Creek common areas are extremely well maintained. Ideally located across from Bear Creek Dog Park and Bear Creek Regional Park, and minutes from Red Rock Canyon, I-25, and Hwy 24—this is Colorado living at its best!',
+    id: 1, type: 'sale', badge: 'AFFILIATE LISTING · FOR SALE',
+    price: '$299,900', address: '826 Arrowwood Rd, Columbia, SC 29210',
+    beds: 3, baths: 2, sqft: 2055, lotSize: 'Verify with source', yearBuilt: 1959,
+    images: [], sourceLabel: 'Columbia Home Source · Century 21 803 Realty',
+    sourceUrl: 'https://cdn.columbiahomesource.com/homedetails/sc/columbia/scconsolidated-f383c89967b635bf9fdafe3b236cd1c6-scconsolidated/826-arrowwood-rd-columbia-sc-29210',
+    features: ['3 bedrooms', '2 bathrooms', 'Attached garage', 'Deck', 'Central air'],
+    description: 'Publicly advertised South Carolina property. The listing source reported this home as active at $299,900 with 3 bedrooms, 2 bathrooms, and approximately 2,055 square feet when checked. Confirm current availability, price, property condition, and showing arrangements directly with the credited listing source.',
     virtualTour: '#'
   },
   {
-    id: 2,
-    type: 'rent',
-    badge: 'FOR RENT',
-    price: '$5,500/mo',
-    address: '855 Peachtree St NE, Atlanta, GA 30308',
-    beds: 2,
-    baths: 2,
-    sqft: 1138,
-    lotSize: 'N/A',
-    yearBuilt: 'N/A',
-    images: [
-      'https://photos.zillowstatic.com/fp/1ea463d206fc140fac2a53bfd44e03cd-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/3ca5987e9daa3a274ce7e4b5a8d415e7-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/7d2c2e3bbf6ab910f181433eecdda6a7-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/7ee8aa36ad10d094d9be3f3c9fe6c8dd-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/7972f733b12870e91b310165a8fd7ce5-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/180dfa335f90c61ef5742e82ff555336-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/ea80ade1dbab95bba3e456219bfad651-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/47eb4527b583c161a15d0ac8c3d42219-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/f4dfc07c6289a23c1cddbc13ee83a4c8-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/8eb06a04cfdf62cd986c3bb392bbb4f0-uncropped_scaled_within_1536_1152.webp',
-      'https://photos.zillowstatic.com/fp/9b9f2d9470bdd207aa30ec601118cf28-uncropped_scaled_within_1536_1152.webp',
-    ],
-    features: [
-      'In-Unit Laundry',
-      'Updated Kitchen',
-      'Walk to BeltLine',
-      'Secured Entry',
-      'Storage Unit'
-    ],
-    description: 'Live in luxury in this fully furnished, designer corner condo in one of Midtown Atlanta’s most sought-after high-rises. Renovated by a renowned interior designer, the home features polished tile floors, floor-to-ceiling windows, a spacious balcony, and breathtaking city views.The custom kitchen is ideal for entertaining with quartz countertops, a large island, ebony cabinetry, stainless steel appliances, and a wine rack. The primary suite offers blackout drapes, a one-of-a-kind walk-in closet, and a spa-style marble bath with double shower heads. The second bedroom includes built-ins perfect for a home office.Enjoy spectacular sunrise views of Stone Mountain, Piedmont Park, Ponce City Market, and downtown. Utilities, high-speed internet, and Apple TV included. Building amenities include 24-hour concierge, pool, fitness center, theater room, clubroom, and 2 secure covered parking spaces.Steps from Peachtree St, Fox Theatre, Piedmont Park, dining, shopping, and MARTA.Minimum 1-year lease. Fully furnished. Excellent credit required.',
+    id: 2, type: 'rent', badge: 'AFFILIATE LISTING · FOR RENT',
+    price: '$2,295/mo', address: '4357 Azalea Dr, Columbia, SC 29205',
+    beds: 2, baths: 2.5, sqft: 1301, images: [],
+    sourceLabel: 'Property Management Services of Columbia',
+    sourceUrl: 'https://pmservicescolumbia.appfolio.com/listings/listings',
+    leaseTerm: 'Confirm with listing source', utilities: 'Confirm with listing source',
+    features: ['2 bedrooms', '2.5 bathrooms', 'Washer/dryer', 'Granite countertops', 'Pets with approval'],
+    description: 'Publicly advertised rental from Property Management Services of Columbia. The listing source reported rent of $2,295 per month and availability when checked. Confirm current availability, rent, deposits, pet policy, and lease terms directly with the property manager.',
     virtualTour: '#'
   },
-   {
-    id: 3,
-    type: 'student',
-    badge: 'OFF-CAMPUS',
-    price: '$1,050/mo',
-    address: '2739 W 47th St, Chicago, IL 60632',
-    campus: 'N/A',
-    university: 'Acero Charter - Officer Donald J. Marquez Campus',
-    beds: 1,
-    baths: 1,
-    sqft: 900,
-    leaseTerm: 'Semester or Annual',
-    utilities: 'Included',
-    images: [
-      'https://photos.zillowstatic.com/fp/553177b3c85184b4f7e33d92dee24e78-cc_ft_1536.webp  ',
-      'https://photos.zillowstatic.com/fp/d9238ec8ee048f3579be5d24c9f0b046-uncropped_scaled_within_1536_1152.webp  ',
-      'https://photos.zillowstatic.com/fp/5b91843a647ce44f4c96d7f0253c6f1b-uncropped_scaled_within_1536_1152.webp  ',
-      'https://photos.zillowstatic.com/fp/24c81a6aee5ca5ee5999c3281f560925-uncropped_scaled_within_1536_1152.webp  ',
-      'https://photos.zillowstatic.com/fp/116fd54347ff11972bd06d39526d9dae-uncropped_scaled_within_1536_1152.webp  ',
-      'https://photos.zillowstatic.com/fp/29ed39ac2d1ac06199bb12cb70d2dae2-uncropped_scaled_within_1536_1152.webp  ',
-      'https://photos.zillowstatic.com/fp/7cb0e8e0c0b856515375ae32443da126-uncropped_scaled_within_1536_1152.webp  ',
-      'https://photos.zillowstatic.com/fp/2a92f735926c4b5f16ce74a24476144e-uncropped_scaled_within_1536_1152.webp  ',
-      'https://photos.zillowstatic.com/fp/11f2b54dae6cc3a4c492a2e01e2a30ee-uncropped_scaled_within_1536_1152.webp  ',
-    ],
-    features: [
-      'Furnished',
-      'High-Speed WiFi',
-      'Central Air',
-      
-    ],
-    description: 'Freshly painted and move-in ready, this bright unit offers comfort and convenience in a highly walkable location near plenty of great restaurants. Just steps away, a laundromat less than 100 feet from your door makes doing laundry fast and easy. The kitchen features stainless steel appliances, including a modern stove and refrigerator, giving the space an updated, polished feel.The unit is not furnished, but staged photos are included in the listing to help you visualize how the space can look when fully decorated and set up as your own. Located on a main street with easy access to CTA transportation, this apartment is perfect for anyone who wants a simple commute and quick connections around the city. Schedule a tour today and see how this well-located, freshly updated unit can fit your lifestyle.*Electricy and gas already included in monthly rent *None refundable move-in fee:$525Lease is for 1 year. Electricity and gas are already included in the monthly rent. Parking can be found on the front and side street (there is typically always parking space). No smoking is allowed. Apartment was recently fully painted. Tenant will be responsible for switching out the air filter (30 second task). Landlord will provide filters.',
+  {
+    id: 3, type: 'student', badge: 'AFFILIATE LISTING · STUDENT RENTAL',
+    price: '$1,050/mo', address: '114.5 South Edisto Ave, Columbia, SC 29205',
+    campus: 'University of South Carolina', university: 'usc',
+    beds: 1, baths: 1, sqft: 'Verify with source',
+    leaseTerm: 'Confirm with listing source', utilities: 'Confirm with listing source',
+    images: [], sourceLabel: 'CollegePads · USC Off-Campus Housing',
+    sourceUrl: 'https://www.rentcollegepads.com/off-campus-housing/university-of-south-carolina/search',
+    features: ['1 bedroom', 'Student-area rental', 'Near University of South Carolina'],
+    description: 'Publicly advertised student-area rental. CollegePads listed this address at $1,050 per month and marked it available when checked. Availability and all lease details must be reconfirmed directly with the listing provider.',
     virtualTour: '#'
-  },
-
+  }
 ];
 
 // DOM Elements
+
 const listingsContainer = document.getElementById('listings-container');
 const studentListingsContainer = document.getElementById('student-listings');
 const modalBody = document.getElementById('modalBody');
@@ -302,9 +212,10 @@ function renderListings(type = 'all') {
   if (listingsContainer) {
     listingsContainer.innerHTML = filtered.map(listing => {
       const firstImg = Array.isArray(listing.images) ? listing.images[0] : listing.img;
+      const imageStyle = firstImg ? `background-image: url('${firstImg}')` : 'background-color: #e9ecef;';
       return `
         <div class="listing-card" data-id="${listing.id}">
-          <div class="listing-img" style="background-image: url('${firstImg}')">
+          <div class="listing-img" style="${imageStyle}">
             <span class="listing-badge">${listing.badge}</span>
             ${listing.images && listing.images.length > 1 
               ? `<button class="view-all-photos" data-id="${listing.id}">📷 ${listing.images.length} Photos</button>` 
@@ -313,6 +224,7 @@ function renderListings(type = 'all') {
           <div class="listing-content">
             <div class="listing-price">${listing.price}</div>
             <div class="listing-address">${listing.address}</div>
+            <div class="listing-source">Affiliate listing · <a href="${listing.sourceUrl}" target="_blank" rel="noopener">Source: ${listing.sourceLabel}</a></div>
             <div class="listing-features">
               <span>${listing.beds} BR</span>
               <span>${listing.baths} BA</span>
@@ -340,7 +252,7 @@ function renderStudentListings() {
       const firstImg = Array.isArray(listing.images) ? listing.images[0] : listing.img;
       return `
         <div class="listing-card" data-id="${listing.id}">
-          <div class="listing-img" style="background-image: url('${firstImg}')">
+          <div class="listing-img" style="${imageStyle}">
             <span class="listing-badge">${listing.badge}</span>
             ${listing.images && listing.images.length > 1 
               ? `<button class="view-all-photos" data-id="${listing.id}">📷 ${listing.images.length} Photos</button>` 
@@ -349,6 +261,7 @@ function renderStudentListings() {
           <div class="listing-content">
             <div class="listing-price">${listing.price}</div>
             <div class="listing-address">${listing.address}</div>
+            <div class="listing-source">Affiliate listing · <a href="${listing.sourceUrl}" target="_blank" rel="noopener">Source: ${listing.sourceLabel}</a></div>
             <div class="listing-features">
               <span>${listing.beds} BR</span>
               <span>${listing.baths} BA</span>
@@ -404,9 +317,7 @@ function openModal(id) {
   const property = listingsData.find(p => p.id === id);
   if (!property) return;
 
-  const imageSources = property.images && Array.isArray(property.images) && property.images.length > 0
-    ? property.images
-    : [property.img];
+  const imageSources = Array.isArray(property.images) ? property.images : (property.img ? [property.img] : []);
 
   const captions = imageSources.map((_, i) => {
     const base = property.address.split(',')[0];
@@ -427,7 +338,7 @@ function openModal(id) {
   }
 
   // ✅ Carousel with CLICKABLE images (opens lightbox)
-  const carouselHTML = `
+  const carouselHTML = imageSources.length ? `
     <div class="property-carousel">
       <div class="carousel-inner">
         ${imageSources.map((src, i) => `
@@ -453,7 +364,7 @@ function openModal(id) {
         </div>
       ` : ''}
     </div>
-  `;
+  ` : '<div class="property-image-placeholder">Photos and additional details are available from the credited listing source.</div>';
 
   if (!modalBody) return;
   modalBody.innerHTML = `
@@ -464,6 +375,8 @@ function openModal(id) {
         <h2>${property.address}</h2>
         <div class="price">${property.price}</div>
         <p>${property.description}</p>
+        <p class="listing-source">Affiliate listing · <a href="${property.sourceUrl}" target="_blank" rel="noopener">View original listing: ${property.sourceLabel}</a></p>
+        <p class="affiliate-disclosure">The Keydeniers Team may receive a referral fee or commission under an affiliate agreement if a referral leads to a completed transaction. Verify all property information with the original source.</p>
         <div class="features-grid">
           <div class="feature-item"><span class="feature-icon">🛏️</span><span><strong>${property.beds} Bedrooms</strong></span></div>
           <div class="feature-item"><span class="feature-icon">🛁</span><span><strong>${property.baths} Bathrooms</strong></span></div>
@@ -477,7 +390,7 @@ function openModal(id) {
         <ul>${property.features.map(f => `<li>✅ ${f}</li>`).join('')}</ul>
         <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.75rem;">
           <button id="modalVirtualTourBtn" class="btn" style="background:#0056b3;color:white;">🎥 Book Virtual Tour</button>
-          <button id="modalContactBtn" class="btn btn-primary">📞 Contact Rebecca</button>
+          <button id="modalContactBtn" class="btn btn-primary">📞 Contact Susan</button>
           <button id="modalSaveBtn" class="btn" style="color:#e63900;">❤️ Save</button>
         </div>
       </div>
