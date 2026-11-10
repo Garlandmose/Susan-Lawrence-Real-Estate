@@ -250,6 +250,7 @@ function renderStudentListings() {
   if (studentListingsContainer) {
     studentListingsContainer.innerHTML = filtered.map(listing => {
       const firstImg = Array.isArray(listing.images) ? listing.images[0] : listing.img;
+      const imageStyle = firstImg ? `background-image: url('${firstImg}')` : 'background-color: #e9ecef;';
       return `
         <div class="listing-card" data-id="${listing.id}">
           <div class="listing-img" style="${imageStyle}">
