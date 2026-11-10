@@ -978,3 +978,25 @@ footer {
     padding: 4px 8px;
   }
 }
+
+/* Affiliate listing attribution */
+.listing-source, .affiliate-disclosure {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #5c6770;
+  margin-top: 0.55rem;
+}
+.listing-source a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.property-image-placeholder {
+  min-height: 180px;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  text-align: center;
+  background: #e9ecef;
+  color: #495057;
+  border-radius: 8px;
+}
